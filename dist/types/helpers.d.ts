@@ -1,0 +1,11 @@
+import type { PhoneCountry, PhoneDialCode, PhoneNumberCountryKey } from './phone';
+export { PHONE_METADATA } from './phoneMetadata';
+export declare function normalizeCountryKey(value: PhoneNumberCountryKey): string;
+export declare function findPhoneCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey): PhoneCountry | undefined;
+export declare function callingCodeForCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey): string | null;
+export declare function phoneLengthsForCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey): number[];
+export declare function phoneMaxLengthForCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey): number | null;
+export declare function localPhoneDigitsForCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey, value: string): string;
+export declare function findDialCode(dialCodes: PhoneDialCode[] | undefined, countryKey: PhoneNumberCountryKey): PhoneDialCode | undefined;
+export declare function maskPhoneForCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey, value: string): string;
+export declare function phoneMaskForCountry(countries: PhoneCountry[] | undefined, countryKey: PhoneNumberCountryKey): string;

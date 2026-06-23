@@ -1,0 +1,63 @@
+{
+    "name": "@erag/phone-number-react",
+    "version": "1.0.0",
+    "description": "Minimal React hook for country-aware phone input, masking, calling codes, and validation.",
+    "keywords": [
+        "phone",
+        "phone-number",
+        "phone-input",
+        "dial-code",
+        "country-code",
+        "calling-code",
+        "phone-mask",
+        "phone-validation",
+        "mobile-number",
+        "headless",
+        "hook",
+        "metadata",
+        "react"
+    ],
+    "license": "MIT",
+    "type": "module",
+    "sideEffects": false,
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE",
+        "CODE_OF_CONDUCT.md",
+        "CONTRIBUTING.md",
+        "SECURITY.md"
+    ],
+    "scripts": {
+        "build": "rollup -c rollup.config.cjs && tsc --emitDeclarationOnly",
+        "eslint": "ESLINT_USE_FLAT_CONFIG=false eslint --resolve-plugins-relative-to . \"src/**/*.{ts,tsx}\"",
+        "lint": "prettier --write \"src/**/*.{ts,tsx,js,json,md}\"",
+        "lint:check": "prettier --check \"src/**/*.{ts,tsx,js,json,md}\"",
+        "type-check": "tsc --noEmit"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0 || ^19.0.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^29.0.0",
+        "@rollup/plugin-node-resolve": "^16.0.3",
+        "@rollup/plugin-typescript": "^12.3.0",
+        "@types/react": "^19.2.14",
+        "@typescript-eslint/eslint-plugin": "^7.18.0",
+        "@typescript-eslint/parser": "^7.18.0",
+        "eslint": "^8.57.1",
+        "prettier": "^3.7.4",
+        "rollup": "^4.53.5",
+        "tslib": "^2.8.1",
+        "typescript": "^5.9.3"
+    }
+}
