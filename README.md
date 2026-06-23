@@ -119,7 +119,7 @@ Country records can use either snake_case or camelCase phone length fields:
 
 ## Scripts
 
-- `npm run build`: build ESM output and TypeScript declarations.
+- `npm run build`: build ESM output with Vite 8 and TypeScript declarations.
 - `npm run type-check`: run TypeScript without emitting files.
 - `npm run lint`: format source files with Prettier.
 - `npm run lint:check`: verify source formatting.
