@@ -1,6 +1,6 @@
 {
   "name": "@erag/phone-number-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal React hook for country-aware phone input, masking, calling codes, and validation.",
   "homepage": "https://github.com/eramitgupta/phone-number-react#readme",
   "repository": {
@@ -11,39 +11,39 @@
     "url": "https://github.com/eramitgupta/phone-number-react/issues"
   },
   "keywords": [
-        "phone",
-        "phone-number",
-        "phone-input",
-        "dial-code",
-        "country-code",
-        "calling-code",
-        "phone-mask",
-        "phone-validation",
-        "mobile-number",
-        "headless",
-        "hook",
-        "metadata",
-        "react"
-    ],
-    "license": "MIT",
-    "type": "module",
-    "sideEffects": false,
-    "main": "dist/index.js",
-    "module": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "exports": {
-        ".": {
-            "import": "./dist/index.js",
-            "types": "./dist/index.d.ts"
-        }
-    },
-    "files": [
-        "dist",
-        "README.md",
-        "LICENSE",
-        "CODE_OF_CONDUCT.md",
-        "CONTRIBUTING.md",
-        "SECURITY.md"
+    "phone",
+    "phone-number",
+    "phone-input",
+    "dial-code",
+    "country-code",
+    "calling-code",
+    "phone-mask",
+    "phone-validation",
+    "mobile-number",
+    "headless",
+    "hook",
+    "metadata",
+    "react"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
   ],
   "scripts": {
     "build": "vite build && tsc -p tsconfig.json --emitDeclarationOnly",
@@ -53,8 +53,8 @@
     "release": "release-it",
     "type-check": "tsc --noEmit"
   },
-    "peerDependencies": {
-        "react": "^18.0.0 || ^19.0.0"
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
