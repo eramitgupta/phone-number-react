@@ -1,8 +1,6 @@
 # @erag/phone-number-react
 
-Minimal React hook for country-aware phone number input, masking, calling codes, and validation with built-in metadata.
-
-This package is standalone. It does not depend on Inertia, Laravel, UI components, or masking libraries. It includes static `countries` and `dialCodes` data by default.
+React hook for building country-aware phone number fields without writing phone parsing logic from scratch. It manages selected country state, local digit cleanup, max-length handling, calling codes, masks, and basic phone length validation for custom React forms.
 
 ## Key Features
 
