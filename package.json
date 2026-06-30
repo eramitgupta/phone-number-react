@@ -1,6 +1,6 @@
 {
   "name": "@erag/phone-number-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Minimal React hook for country-aware phone input, masking, calling codes, and validation.",
   "homepage": "https://github.com/eramitgupta/phone-number-react#readme",
   "repository": {
